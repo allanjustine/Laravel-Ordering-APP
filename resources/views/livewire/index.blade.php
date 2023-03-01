@@ -70,6 +70,8 @@
                                 <td>{{ $order->status }}</td>
                                 <td>{{ $order->price }}</td>
                                 <td>
+                                    <a href="{{ route('orders.view', ['id' => $order->id]) }}"
+                                        class="btn btn-warning">View</a>
                                     <a href="{{ url('edit', ['order' => $order->id]) }}"
                                         class="btn btn-primary">Edit</a>
                                     <a href="" class="btn btn-danger" title="Delete" data-toggle="modal"
